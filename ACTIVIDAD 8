@@ -1,0 +1,23 @@
+let x=Math.round(Math.random()*30)
+console.log('La temperatura en celsius es:'+ x)
+function convertirAF(celsius){
+    
+    let farenheit;
+    farenheit = (celsius *9/5)+32;
+    return farenheit;
+}
+console.log(' La temperatura en Farenheit es:'+convertirAF(x))
+
+function convertiraK(celsius){
+    let kelvin;
+    kelvin= (celsius + 273.15)
+    return kelvin;
+}
+console.log(' La Temperatura en Kelvin es:'+convertiraK(x))
+
+function convertiraR(celsius){
+    let rankine;
+    rankine= (celsius *9/5)+491.67
+    return rankine;
+}
+console.log(' La Temperatura en Rankine es:'+convertiraR(x))
