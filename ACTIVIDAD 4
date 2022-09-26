@@ -1,0 +1,67 @@
+var x = 10
+x%2==0 ? console.log('par'):console.log('impar')
+if(x%2==0){
+    console.log('es num par')
+}else{
+    console.log('es num impar')
+}
+
+
+
+----------------------------------------------------
+OBJETOS
+----------------------------------------------------
+
+const x=[]
+var persona={
+    nombre:'Ernesto sabato',
+    identificacion:151553144,
+    datosCompletos:()=>console.log(persona.nombre, persona.identificacion)
+}
+console.log(persona.nombre);
+console.log(persona['identificacion']);
+persona.datosCompletos()
+persona.direccion='Calle 13';
+console.log(persona)
+persona.nombre='Julio Verne';
+console.log(persona.nombre)
+delete persona.nombre;
+console.log(persona)
+
+
+
+var triangulo={
+    nombre:'Triangulo',
+    base:8,
+    altura:16,
+    area:()=> 
+    console.log('El area del triangulo es:',triangulo.base*triangulo.altura/2)
+}
+triangulo.area()
+
+
+var cuadrado={
+    nombre:'Cuadrado',
+    lado:4,  
+    area:()=>console.log('El area del cuadrado es:',cuadrado.lado*cuadrado.lado)
+}
+cuadrado.area()
+console.log(cuadrado)
+
+var circulo={
+    nombre:'Circulo',
+    radio:23,
+    perimetro:()=>console.log('El perimetro del circulo es:',(2*3.14)*circulo.radio),
+    area:()=>console.log('El area del circulo es',3.14159265*(Math.pow(circulo.radio,2)))
+}
+console.log(circulo)
+circulo.perimetro()
+
+var rectangulo={
+    nombre:'Rectangulo',
+    base:27,
+    altura:30,
+    area:()=>console.log('El area del rectangulo es:',rectangulo.base*rectangulo.altura)
+}
+console.log(rectangulo)
+rectangulo.area()
