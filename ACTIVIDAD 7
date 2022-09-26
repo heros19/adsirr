@@ -1,0 +1,35 @@
+
+function saludar(saludo){
+    saludo();
+}
+
+saludar(function(nombre){
+    console.log('Que tal' ,nombre)
+})
+
+
+
+setTimeout(function(){
+    console.log('Que tal')
+}, 2000)
+
+
+
+ console.log('WE ')
+ setTimeout(function(){
+    console.log('WILL')
+ }, 500)
+ setTimeout(function(){
+    console.log('WE ')
+ }, 1000);
+ setTimeout(function(){
+    console.log('WILL')
+ }, 1500);
+ setTimeout(function(){
+    console.log('ROCK')
+ }, 2000);
+ setTimeout(function(){
+    console.log('YOU')
+ }, 2500);
+
+
