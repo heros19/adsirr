@@ -1,0 +1,57 @@
+var poblacion= Math.round(Math.random()*(10000-1000)+1000)
+console.log(`Tamaño Población : ${poblacion}`)
+
+function nacimiento(){
+    a=(poblacion/100*10)
+console.log(Math.floor(a),'Porcentaje Nacimiento')
+}
+nacimiento();
+
+
+function muerte(){
+    b=(poblacion/100*3)
+console.log(Math.floor(b),'Porcentaje Muertes')
+}
+muerte();
+
+function tasacreci(){
+    c=(a - b)/(poblacion)
+console.log(c,'Tasa Crecimiento')
+}
+tasacreci();
+
+function salgebraica(){
+for (let t = 1; t <=10; t++){
+        setTimeout(() => {
+         x = (1*c);
+         z= Math.pow(x,t);
+         y= poblacion*z
+
+console.log(`El tiempo es ${t} y el tamaño de la poblacion es ${y}`) 
+        }, 1000);
+
+    } 
+}
+
+salgebraica()
+
+
+
+
+function porcentajepob{
+    u=(n/10)
+}
+
+const casa=new Promise((resolve,reject)=>{
+    if(t=10){
+        resolve('Has Ganado')
+    }else{
+        reject('No tuvo exito')
+    }
+})
+
+casa
+.then(res =>{
+    console.log('succes:'+res);
+})
+
