@@ -1,0 +1,90 @@
+let vector10 = [ ];
+vector1[0]=90;
+vector1[1]=50;
+vector1[2]='sena';
+vector1[4]=20;
+console.log(vector10)
+
+
+let vec = new Array();
+vec[0]='YO';
+vec[1]='SOY';
+vec[2]='BATMAN';
+vec[3]=[0,1,2]
+console.log(vec)
+
+for (let i = 0; i < 15; i++) {
+    vector[i]=Math.round(Math.random()*100); 
+}
+console.log(vector);
+
+let vector=[];
+let tam=Math.round((Math.random()*20-10)+10);
+console.log(`El valor de la variable es ${tam}`)
+for (let i = 0; i < tam; i++) {
+    vector[i]=Math.round(Math.random()*100); 
+}
+console.log(vector);
+console.log(`Tamaño del vector ${vector.length}`);
+for (let i = 0; i < vector.length; i++) {
+    if(vector[i]%2==0){
+        console.log(`${vector[i]} Es un numero par`)
+    } else{
+        console.log(`${vector[i]} Es un numero impar`)
+    }
+    
+}
+
+
+--------------------------------------------------------------
+let vector=[];
+let tama=Math.round((Math.random()*30-10)+10);
+console.log(`El Valor de la variable  ${tama}`)
+for (let i = 0; i < tama; i++) {
+    vector[i]=Math.round(Math.random()*100); 
+}
+console.log(vector);
+
+------------------------------------------------------------
+
+let suma=0
+for (let i = 0; i < vector.length; i++) {
+    suma=suma+vector[i]
+}
+console.log('Suma',suma)
+
+------------------------------------------------------------
+PROMEDIO
+------------------------------------------------------------
+let suma=0
+for (let i = 0; i < vector.length; i++) {
+    suma=suma+vector[i]
+    media=suma/vector.length
+}
+console.log(`Suma ${suma}`);
+console.log(`Promedio ${media}`)
+
+--------------------------------------------------------------------------------------------------
+BUSCAR DENTRO DE UN ARREGLO UN ELEMENTO
+-------------------------------------------------------------------------------------------------
+element=20
+for (let i = 0; i <= vector.length; i++) {
+    if(vector[i]==element){
+        console.log(`El elemento ${element} está en la posicion  ${i+1}`)    
+    }
+         
+}
+console.log(`El elemento ${element} no se encuentra dentro del vector `)
+
+------------------------------------------------------------------------------------------------
+ARRAY DE BURBUJA 
+------------------------------------------------------------------------------------------------
+for (let i = 0; i < vector.length; i++) {
+    for (let j = 0; j < vector.length - i; j++) {
+        if(vector[j]>vector[j+1]){
+            [vector[j], vector[j+1]]=[vector[j+1],vector[j]]
+        } 
+    }
+    
+}
+console.log(vector)
