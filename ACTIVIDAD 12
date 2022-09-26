@@ -1,0 +1,18 @@
+function Di_algo(x){
+    if (true) {
+        return 'Di algo '+ x;
+    } else {
+        
+    }
+}
+
+    async function talk(x){
+        const words= await Di_algo(x);
+    console.log(words);
+
+}
+setTimeout(() => {
+    talk(4);
+   talk(8);
+   talk(10);
+}, 3000);
