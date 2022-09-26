@@ -1,0 +1,119 @@
+function numero_perfecto(num) {
+    let suma = 0;
+    for (let i = 1; i < num; i++) {
+        if(num%i==0){
+            suma+=i
+        } 
+    }
+    if(suma==num){
+        return `${num} Es un numero perfecto`
+    }else{
+        return `${num} No es un numero perfecto`
+    }
+}
+numero_perfecto(15);
+console.log(numero_perfecto(15))
+
+
+function tip_trian(a,b,c) {
+        if(a==b&&b==c&&c==a){
+            return 'Es un triangulo Equilatero'
+        }else if(a==b||b==c||c==a){
+            return 'Es un triangulo Isosceles'
+        }else{
+            return 'Es un triangulo Escaleno'
+        }
+}
+console.log(tip_trian(3,3,3))
+
+------------------------------------------------------------------------------
+teorema de pitagoras
+
+function hipot(ab,cd){
+    var c= Math.sqrt(Math.pow(ab,2)+Math.pow(cd,2))
+    return c
+}
+console.log(hipot(2,3))
+
+
+
+function numero_aleatorio(){
+    var n = Math.floor(Math.random ()*100+1);
+    return n
+}
+var a= numero_aleatorio()
+console.log(a)
+var b = numero_aleatorio()
+console.log(b)
+var c = numero_aleatorio()
+console.log(c)
+function mitad(a,b,c) {
+    if (a > b) { 
+        if(c > a){
+            return a
+        }else if(c > b){
+            return c
+            
+          }else if(b > a){
+            if(c > b){
+                return b
+            }
+          }else if(b > c){
+            return b
+          }
+      }else if(b > a){          
+        if(c > b){
+            return b
+        }else if(c > a){
+          if(b > c){
+            return c
+          }
+        }else if(b > a){
+            return a
+        }
+}
+}
+console.log(`La mitad es: ${mitad(a,b,c)}`)
+
+
+-----------------------------------------------------------------------------
+NUMERO PRIMOO
+-----------------------------------------------------------------------------
+function numero_aleatorio(){
+    return n = Math.floor(Math.random ()*100+1);
+}
+var num = numero_aleatorio()
+console.log(`${num} numero aleatorio`)
+function primo(num) {
+    divisores = 0
+    for (let a = 0; a <= num; a++) {
+        if (num%a==0) {
+            divisores++
+        }
+    }
+    if (divisores == 2) {
+        return `${num} es primo`
+    }else{
+        return `${num} no es primo`
+    }
+}
+console.log(primo(num))
+
+var numero_aleatorio=()=>Math.floor(Math.random ()*100+1);
+var num = numero_aleatorio()
+console.log(`${num} numero aleatorio`)
+var primo=(num)=>{
+    divisores = 0
+    for (let a = 0; a <= num; a++) {
+        if (num%a==0) {
+            divisores++
+        }
+    }
+    if (divisores == 2) {
+        return `${num} es primo`
+    }else{
+        return `${num} no es primo`
+    }
+}
+console.log(primo(num))
+
