@@ -1,0 +1,50 @@
+class Publicacion {
+    constructor(titulo, precio) {
+        this._titulo = titulo;
+        this._precio = precio
+    }
+    set titulo(titulo) {
+        this._titulo = titulo;
+    }
+    get titulo() {
+        return 'La publicacion es',this._titulo;
+    }
+
+    set precio(precio) {
+        this._precio = precio;
+    }
+
+}
+
+class Libro extends Publicacion {
+    constructor(titulo, precio, n_pag) {
+        super(titulo, precio);
+        this._n_pag = n_pag;
+    }
+
+    set n_pag(n_pag) {
+        this._n_pag = n_pag;
+    }
+    get n_pag() {
+        return 'El numero de paginas del libro es:',this._n_pag;
+    }
+}
+
+class CD extends Publicacion {
+    constructor(titulo, precio, tiempo_repro) {
+        super(titulo, precio);
+        this._tiempo_repro = tiempo_repro;
+    }
+    set tiempo_repro(tiempo_repro) {
+        this._tiempo_repro = tiempo_repro
+    }
+
+    get tiempo_repro() {
+        return 'El tiempo de reproducción es:',this._tiempo_repro
+    }
+}
+
+obj1 = new Libro('Akelarre', 45000, 394)
+obj2 = new CD('Akelarre', 12000,480 )
+console.log(obj1, obj2)
+console.log(obj2)
