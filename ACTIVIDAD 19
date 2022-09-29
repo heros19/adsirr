@@ -1,0 +1,29 @@
+X = Math.round(Math.random() * 365)
+console.log('el numero es:', X)
+if (X <= 31) {
+    console.log('El mes es  ENERO')
+} else if (X > 31 && a < 59) {
+    console.log('El mes  es  FEBRERO')
+} else if (X > 59 && a < 90) {
+    console.log('El mes es  MARZO')
+} else if (X > 90 && a < 120) {
+    console.log('El mes  es  ABRIL')
+} else if (X > 120 && a < 151) {
+    console.log('El mes es  MAYO')
+} else if (X > 151 && a < 181) {
+    console.log('El mes es  JUNIO')
+} else if (X > 181 && a < 212) {
+    console.log('El mes  JULIO')
+} else if (X > 212 && a < 243) {
+    console.log('El mes es  AGOSTO')
+} else if (X > 243 && a < 273) {
+    console.log('El mes  es  SEPTIEMBRE')
+} else if (X > 273 && a < 304) {
+    console.log('El mes es  OCTUBRE')
+} else if (X > 304 && a < 334) {
+    console.log('El mes es  NOVIEMBRE')
+} else if (X > 334 && a < 365) {
+    console.log('El mes es DICIEMBRE')
+} else {
+    console.log('incorrecto')
+}
