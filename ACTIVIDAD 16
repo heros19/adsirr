@@ -1,0 +1,22 @@
+valor del medio es 11. No use operadores lógicos*/
+
+
+var x, y, z
+console.log('cual es el numero del medio');
+
+x = Math.round(Math.random() * 100);
+console.log(`El primer numero es ${a}`)
+y = Math.round(Math.random() * 100);
+console.log(`El segundo numero es ${b}`)
+z = Math.round(Math.random() * 100);
+console.log(`El tercer numero es ${c}`)
+console.log('___________________________')
+if ((c < a && b > a) || (c > a && b < a)) {
+    console.log(`El numero de la mitad es:  ${a}`)
+} else if ((c < b && a > b) || (c > b && a < b)) {
+    console.log(`El numero de la mitad es:  ${b}`)
+} else if ((b < c && a > c) || (b > c && a < c)) {
+    console.log(`El numero de la mitad es:  ${c}`)
+} else {
+    console.log('Todos los numeros son iguales')
+}
