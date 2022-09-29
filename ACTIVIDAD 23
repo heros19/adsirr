@@ -1,0 +1,15 @@
+var vector=[]
+
+function consec(x){
+   
+    
+for (let i = 0; i <10 ;i++) {
+        
+x[i]= Math.round(Math.random ()*(1-9)+9)
+
+  
+}
+}
+
+
+consec(vector)
