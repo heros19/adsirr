@@ -1,0 +1,20 @@
+var X, Y, Z
+X = Math.round(Math.random() * 10)
+Y = Math.round(Math.random() * 10)
+Z = Math.round(Math.random() * 10)
+console.log(`El primer es: ${a}`)
+console.log(`El segundo numero es  a: ${b}`)
+console.log(`El tercer numero es : ${c}`)
+console.log('__________________________________________')
+
+if (a == b && b == c && a == c) {
+    console.log('Los tres numeros son iguales')
+} else if (a == b && a != c && c != b) {
+    console.log('El primer y el segundo  son iguales')
+} else if (a != b && a == c && c != b) {
+    console.log('El primer y el tercer  son iguales')
+} else if (a != b && a != c && c == b) {
+    console.log('El segundo y el tercer numero son iguales')
+} else {
+    console.log('Los tres numeros son diferentes')
+}
