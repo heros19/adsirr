@@ -1,0 +1,25 @@
+function prom(nota) {
+    switch (nota) {
+        case 0:
+            console.log(`La nota es igual a ${nota}, su promedio es NO APROBADO`)
+            break;
+        case 1:
+            console.log(`La nota es igual a ${nota}, su promedio es INSUFICIENTE`)
+            break;
+        case 2:
+            console.log(`La nota es igual a ${nota},su promedio es BASICO`)
+            break;
+        case 3:
+            console.log(`La nota es igual a ${nota},su promedio es ACEPTABLE`)
+            break;
+        case 4:
+            console.log(`La nota es igual a ${nota},su promedio es ALTO`)
+            break;
+        case 5:
+            console.log(`La nota es igual a ${nota},su promedio es SUPERIOR`)
+            break;
+        default:
+            console.log('La nota no es aceptada ');
+    }
+}
+prom(Math.round(Math.random() * (0 - 5) + 5))
